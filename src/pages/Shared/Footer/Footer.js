@@ -42,9 +42,9 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Follow Us</h4>
                         <ul className='social-links'>
-                            <i><Link to='/https://www.facebook.com/'><FaFacebook /></Link></i>
-                            <i><Link to='/'><FaTwitter /></Link></i>
-                            <i><Link to='/'><FaInstagram /></Link></i>
+                            <i><a href='https://www.facebook.com/' target='_blank'><FaFacebook /></a></i>
+                            <i><a href='https://www.twitter.com/' target='_blank'><FaTwitter /></a></i>
+                            <i><a href='https://www.instagram.com/' target='_blank'><FaInstagram /></a></i>
                             {/* <i><Link to='/'><FaLin /></Link></i> */}
                         </ul>
                     </div>
