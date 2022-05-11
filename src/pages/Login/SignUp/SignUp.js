@@ -51,6 +51,7 @@ const SignUp = () => {
                 <input className='mb-3' type="password" name="password" placeholder='Your Password' required />
                 <input className='mb-3 fw-bold' type="submit" value="SIGN UP" />
             </form>
+           
             <p>Already Have an Account? <span onClick={handleLoginToggle} className='toggleToLogin'>Login please</span></p>
             <SocialLogin></SocialLogin>
         </div>

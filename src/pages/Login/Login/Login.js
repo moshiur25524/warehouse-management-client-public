@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
@@ -27,6 +27,10 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
+        auth
+    );
+
     const clearFields = event => {
         Array.from(event.target).forEach((e) => (e.value = ""));
     }
@@ -37,6 +41,12 @@ const Login = () => {
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
         clearFields(event);
+    }
+
+    const handleForgotPassword = async(event) =>{
+        const email = event.target.email.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
     }
 
     if (loading) {
@@ -79,6 +89,7 @@ const Login = () => {
                     <Button variant="primary" type="submit">
                         LOGIN
                     </Button>
+                    <p className='text-primary forget-btn' onClick={handleForgotPassword}>Forgot your Password ?</p>
                 </Form>
                 <p>Don't Have An Account? <span onClick={handleRegisterToggle} className='toggleToRegister'>Register please</span></p>
                 <SocialLogin></SocialLogin>
