@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Robinson Crusoe",
       "price": 250,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"
@@ -12,16 +12,16 @@
       "id": 2,
       "name": "The Life and Opinions of Tristram",
       "price": 350,
-      "qunatity": 3,
+      "quantity": 3,
       "description": "Tristram Shandy set the stage for experimental literature. It was perhaps the first stream-of-consciousness narrative a style later adopted by James Joyce. Sterne exploration of what constitutes a novel, and of the relationship between author and reader had a big influence on writers like Virginia Woolf",
       "supplier": "Moshiur",
-      "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpghttps://i.ibb.co/ysLNMZJ/life-and-opinions-of-tristram-shandy-large-1.jpg"
+      "img": "https://i.ibb.co/ysLNMZJ/life-and-opinions-of-tristram-shandy-large-1.jpg"
     },
     {
       "id": 3,
       "name": "Emma",
       "price": 450,
-      "qunatity": 7,
+      "quantity": 7,
       "description": " Emma is indeed beautiful, wealthy, and smart. However, she is also spoiled, meddlesome, and self-deluded. Although she is convinced she will never marry, Emma believes she is an excellent matchmaker. As she tells her father and her dear friend Mr.",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpghttps://i.ibb.co/ysLNMZJ/life-and-opinions-of-tristram-shandy-large-1.jpghttps://i.ibb.co/GM3hnQT/emma-1.jpg"
@@ -30,7 +30,7 @@
       "id": 4,
       "name": "Robinson Crusoe",
       "price": 550,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"
@@ -39,7 +39,7 @@
       "id": 5,
       "name": "Robinson Crusoe",
       "price": 650,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"
@@ -48,7 +48,7 @@
       "id": 6,
       "name": "Robinson Crusoe",
       "price": 750,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"
@@ -57,7 +57,7 @@
       "id": 7,
       "name": "Robinson Crusoe",
       "price": 560,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"
@@ -66,7 +66,7 @@
       "id": 8,
       "name": "Robinson Crusoe",
       "price": 360,
-      "qunatity": 5,
+      "quantity": 5,
       "description": " Robinson Crusoe, as a young and impulsive wanderer, defied his parents and went to sea. He was involved in a series of violent storms at sea and was warned by the captain that he should not be a seafaring man. Ashamed to go home, Crusoe boarded another ship and returned from a successful trip to Africa",
       "supplier": "Moshiur",
       "img": "https://i.ibb.co/3WbVTk0/robinson-crusoe.jpg"

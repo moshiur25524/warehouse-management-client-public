@@ -18,9 +18,16 @@ const SocialLogin = () => {
         signInWithGithub()
     }
 
+    // let errorMessage;
+    // if (error) {
+    //     errorMessage =
+    //         <p className='text-danger'>{error?.message}</p>
+    // }
+
     return (
         <div>
             <div className='d-flex justify-content-center align-items-center '>
+            
                 <div>________________</div>
                 <span className='mx-3'>or use one these options</span>
                 <div>_________________</div>

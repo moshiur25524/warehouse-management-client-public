@@ -9,7 +9,7 @@ const SignUp = () => {
 
     const navigate = useNavigate();
 
-    const handleLoginToggle = () =>{
+    const handleLoginToggle = () => {
         navigate('/login')
     }
 
@@ -18,18 +18,27 @@ const SignUp = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth);
 
-    const handleSignUp = event =>{
+    const clearFields = event => {
+        // we have to convert event.target to array
+        // we use from method to convert event.target to array
+        // after that we will use forEach function to go through every input to clear it
+        Array.from(event.target).forEach((e) => (e.value = ""));
+    }
+
+    const handleSignUp = event => {
         event.preventDefault()
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
         console.log(name, email, password);
         createUserWithEmailAndPassword(email, password)
+
+        clearFields(event)
     }
 
-    if(user){
+    if (user) {
         navigate('/')
     }
 

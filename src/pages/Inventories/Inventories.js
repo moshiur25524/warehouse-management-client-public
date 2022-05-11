@@ -1,18 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import useInventories from '../CustomHook/useInventories';
+import Inventory from '../Shared/Inventory/Inventory';
+import './Inventories.css'
 
 const Inventories = () => {
     const [inventories, setInventories] = useState([])
     
     useEffect(()=>{
-        fetch('fakeData.json')
+        fetch('http://localhost:5000/inventory')
         .then(res => res.json())
         .then(data => setInventories(data))
     },[])
     // const [inventories] = useInventories()
     return (
-        <div>
-            <h1>This is Inventories Page: {inventories.length}</h1>
+        <div className='container'>
+            <h1 className='text-center text-warning'>All Books</h1>
+            <div className='inventories'>
+                {
+                    inventories.map(inventory => <Inventory
+                    key={inventory._id}
+                    inventory= {inventory}
+                    ></Inventory>)
+                }
+            </div>
         </div>
     );
 };

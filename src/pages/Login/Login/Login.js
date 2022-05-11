@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css'
 
@@ -11,10 +12,11 @@ const Login = () => {
 
     const navigate = useNavigate()
     const location = useLocation()
+    // const [user] = useAuthState()
 
     const from = location.state?.from?.pathname || "/";
 
-    const handleRegisterToggle = () =>{
+    const handleRegisterToggle = () => {
         navigate('/signup')
     }
 
@@ -23,36 +25,40 @@ const Login = () => {
         user,
         loading,
         error,
-      ] = useSignInWithEmailAndPassword(auth);
-     
-    const handleloginForm = event =>{
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const clearFields = event => {
+        Array.from(event.target).forEach((e) => (e.value = ""));
+    }
+
+    const handleloginForm = event => {
         event.preventDefault()
         const email = event.target.email.value;
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password)
-       
+        clearFields(event);
     }
 
-
-    if(user){
-        navigate('/')
-    }
-     
-    if(loading){
+    if (loading) {
         return <Loading></Loading>
     }
 
-    let errorMessage;
-    if (error) {
-
-        errorMessage =
-            <p className='text-danger'>Error: {error?.message}</p>
-
-    }
-
-    if(user){
+    if (user) {
         navigate(from, { replace: true });
     }
+
+
+    if (user) {
+        navigate('/')
+    }
+
+
+    let errorMessage;
+    if (error) {
+        errorMessage =
+            <p className='text-danger'>{error?.message}</p>
+    }
+
 
     return (
         <div>
@@ -69,6 +75,7 @@ const Login = () => {
                         <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
                     {errorMessage}
+                    <ErrorMessage></ErrorMessage>
                     <Button variant="primary" type="submit">
                         LOGIN
                     </Button>
