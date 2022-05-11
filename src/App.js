@@ -12,6 +12,7 @@ import SignUp from './pages/Login/SignUp/SignUp';
 import Login from './pages/Login/Login/Login';
 import RequireAuth from './pages/Login/RequireAuth/RequireAuth';
 import ManageBook from './pages/ManageBook/ManageBook';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         }></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

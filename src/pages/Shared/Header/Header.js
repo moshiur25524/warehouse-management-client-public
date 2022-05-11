@@ -24,7 +24,7 @@ const Header = () => {
                 <Link to='/'>Home</Link>
                 <Link to='/inventories'>Inventories</Link>
                 <Link to='/blogs'>Blogs</Link>
-                <Link to='/about'>About</Link>
+                <Link to='/contact'>Contact Us</Link>
                 {
                     user?
                    <>

@@ -5,9 +5,9 @@ Server side Link [Book House Server](https://github.com/facebook/create-react-ap
 
 ## Short Description
 
-The Website is a store houuse of books. Every types of books can be collected from this website. Novel books, Science fiction books, Child Story books, Relegious books , Advanture books and a lot of books can be ovserved from this website. It has enough stock of books of collections. So, Don't waste your time to think. Just start right now to explore the side.
+The Website is a store house of books. Every types of books can be collected from this website. Novel books, Science fiction books, Child Story books, Relegious books , Advanture books and a lot of books can be ovserved from this website. It has enough stock of books of collections. So, Don't waste your time to think. Just start right now to explore the side.
 
-### Features and Funtionality of the website
+### Features and Functionality of the website
 
 * Some Routes such as Home page, Manage Books,Inventories, About Us , Login, Add Books etc are set to the navbar.
 * In the Home page, There are 6 sections. First a navbar what contain some links and a logo of the website, 6 books from whole collection, a Banner, a best Author information and comments of the whole sellers.
