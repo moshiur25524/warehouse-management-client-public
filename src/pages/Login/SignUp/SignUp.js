@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'react-firebase-hooks/auth';
 import './SignUp.css'
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -20,6 +20,8 @@ const SignUp = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
 
+    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
+
     const clearFields = event => {
         // we have to convert event.target to array
         // we use from method to convert event.target to array
@@ -34,6 +36,7 @@ const SignUp = () => {
         const password = event.target.password.value;
         console.log(name, email, password);
         createUserWithEmailAndPassword(email, password)
+        sendEmailVerification()
 
         clearFields(event)
     }

@@ -49,7 +49,7 @@ const Login = () => {
         alert('Sent email');
     }
 
-    if (loading) {
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
@@ -73,7 +73,7 @@ const Login = () => {
     return (
         <div>
             <div className='w-50 mx-auto my-5'>
-                <h1 className='text-center'> Login </h1>
+                <h1 className='text-center text-warning'> Login </h1>
                 <Form onSubmit={handleloginForm}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control type="email" name='email' placeholder="Enter email" required />
