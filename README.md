@@ -1,18 +1,19 @@
-# Getting Started with Create React App
+# Book House
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Client side Link [Book House](https://github.com/facebook/create-react-app).
+Server side Link [Book House Server](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Short Description
 
-In the project directory, you can run:
+The Website is a store houuse of books. Every types of books can be collected from this website. Novel books, Science fiction books, Child Story books, Relegious books , Advanture books and a lot of books can be ovserved from this website. It has enough stock of books of collections. So, Don't waste your time to think. Just start right now to explore the side.
 
-### `npm start`
+### Features and Funtionality of the website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Some Routes such as Home page, Manage Books,Inventories, About Us , Login, Add Books etc are set to the navbar.
+* In the Home page, There are 6 sections. First a navbar what contain some links and a logo of the website, 6 books from whole collection, a Banner, a best Author information and comments of the whole sellers.
+* In the inventories, All the books are collected. From the inventories books page , it can be navigate to manage books page.
+* Signup, singIn, singout authentication are implemented and some routes are proteced. If user is logged in. Then he will be permitted in the Protected page.
+* If user Logged in some extra routes can be seen in the navbar.
 
 ### `npm test`
 
