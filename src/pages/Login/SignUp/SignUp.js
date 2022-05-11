@@ -23,9 +23,6 @@ const SignUp = () => {
     const [sendEmailVerification, sending] = useSendEmailVerification(auth);
 
     const clearFields = event => {
-        // we have to convert event.target to array
-        // we use from method to convert event.target to array
-        // after that we will use forEach function to go through every input to clear it
         Array.from(event.target).forEach((e) => (e.value = ""));
     }
 
