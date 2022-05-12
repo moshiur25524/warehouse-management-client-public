@@ -6,6 +6,8 @@ import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import ErrorMessage from '../ErrorMessage/ErrorMessage';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 
 const Login = () => {
@@ -45,8 +47,10 @@ const Login = () => {
 
     const handleForgotPassword = async(event) =>{
         const email = event.target.email.value;
+       if(email){
         await sendPasswordResetEmail(email);
-        alert('Sent email');
+        toast("Wow so easy!")
+       }
     }
 
     if (loading || sending) {

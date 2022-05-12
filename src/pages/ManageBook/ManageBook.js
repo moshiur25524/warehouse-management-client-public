@@ -15,7 +15,7 @@ const ManageBook = () => {
         console.log(name, email);
         clearFields(event);
 
-        fetch('http://localhost:5000/inventory', {
+        fetch('https://afternoon-citadel-05225.herokuapp.com/inventory', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
