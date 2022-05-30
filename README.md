@@ -5,7 +5,7 @@ Server side Link [Book House Server](https://afternoon-citadel-05225.herokuapp.c
 
 ## Short Description
 
-The Website is a store house of books. Every types of books can be collected from this website. Novel books, Science fiction books, Child Story books, Relegious books , Advanture books and a lot of books can be ovserved from this website. It has enough stock of books of collections. So, Don't waste your time to think. Just start right now to explore the side.
+The Website is a store house of books. Every types of books can be collected from this website. Novel books, Science fiction books, Child Story books, Relegious books , Advanture books and a lot of books can be ovserved from this website. It has enough stock of books of collections. So, Don't waste your time to think. Just start scrolling right now and explore the side.
 
 ### Features and Functionality of the website
 
